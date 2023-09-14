@@ -33,19 +33,20 @@
 			<div class="column">
 				<div class="input-box">
 					<label>Date of birth</label>
-					<input type="text" placeholder="Enter date"required>
+					<!-- changing "text" to "number" and "month" -->
+					<input type="number" placeholder="Enter date"required>
 				</div>
 				<div class="input-box">
 					<label>
 						<p>month</p>
 					</label>
-					<input type="text" placeholder="Enter month"required>
+					<input type="month" placeholder="Enter month"required>
 				</div>
 				<div class="input-box">
 					<label>
 						<p>year</p>
 					</label>
-					<input type="text" placeholder="Enter year"required>
+					<input type="number" placeholder="Enter year"required>
 				</div>
 			</div>
 			<div class="gender-box">
@@ -60,8 +61,8 @@
 						<label for="check-female">Female</label>
 					</div>
 					<div class="gender">
-						<input type="radio" id="check–other" name="gender">
-						<label for="check–other">Other</label>
+						<input type="radio" id="check-other" name="gender">
+						<label for="check-other">Other</label>
 					</div>
 				</div>
 			</div>
@@ -79,10 +80,13 @@
 							<option>Denmark</option>
 						</select>
 					</div>
+					<input type="text" placeholder="Enter your city"required>
 				</div>
-				<input type="text" placeholder="Enter your city"required>
-				<input type="text" placeholder="Enter your region"required>
-				<input type="text" placeholder="Enter your postal code"required>
+				<div class="column">
+					<input type="text" placeholder="Enter your region"required>
+				<!-- adding numbergenerator with type="number" instead of "text" -->
+					<input type="number" placeholder="Enter your postal code"required>
+				</div>
 			</div>
 			<button>Submit</button>
 		</form>

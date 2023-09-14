@@ -62,6 +62,10 @@ p {
 	column-gap: 15px;
 }
 
+.input-box input:focus{
+	box-shadow: 0 1px rgba(0, 0, 0, 0, 0.1);
+}
+
 /*  Radio buttons */
 .form .gender-box{
 	margin-top: 20px;
@@ -95,6 +99,10 @@ p {
 	cursor: pointer;
 }
 
+.gender label{
+	color: #707070;
+}
+
 .address :where(input, .select-box){
 	margin-top: 15px;
 }
@@ -111,7 +119,7 @@ p {
 
 .form button{
 	height: 55px;
-	width: 100%;
+	width: 80%;
 	color: #fff;
 	font-size: 1rem;
 	border: none;
