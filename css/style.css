@@ -17,6 +17,10 @@ p {
 	color: #fff;
 }
 
+h2{
+	text-decoration: underline 1px #707070;
+}
+
 .container{
 	position: relative;
 	max-width: 700px;
