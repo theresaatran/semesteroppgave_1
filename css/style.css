@@ -1,13 +1,17 @@
-body{
-	
-}
 
 .container{
-	width: 800px;
-	height: 1200px;
-	border: 2px solid black;
+	width: 600px;
+	height: 700px;
+	border: 2px solid rgb(164, 161, 161);
+	margin: 0 auto; /* automatisk sentrert */
+	display: flex;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .header{
-
+	width: 800px;
+	height: 100px;
+	background-color: lightblue;
+	text-align: center;
+	align-items: center;
 }
