@@ -43,8 +43,8 @@ p {
 	margin-top: 20px;
 }
 
-/* input box */
-.form .input-box input{ 
+/* input box style */
+.form :where(.input-box input, .select-box){ 
 	position: relative;
 	height: 50px;
 	width: 100%;
@@ -91,7 +91,19 @@ p {
 	cursor: pointer;
 }
 
+.address :where(input, .select-box){
+	margin-top: 15px;
+}
 
+/* Make the select-box look like the input-box*/
+.select-box select{
+	height: 100%;
+	width: 100%;
+	outline: none;
+	border: none;
+	color: #707070;
+	font-size: 1rem;
+}
 
 
 /* Responsive */
