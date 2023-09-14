@@ -1,0 +1,13 @@
+body{
+	background-color: grey;
+}
+
+.container{
+	width: 800px;
+	height: 1200px;
+	border: 2px solid black;
+}
+
+.header{
+
+}
