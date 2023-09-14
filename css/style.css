@@ -13,6 +13,10 @@ body{
 	background-color: rgb(130, 106, 251);
 }
 
+p {
+	color: #fff;
+}
+
 .container{
 	position: relative;
 	max-width: 700px;
@@ -39,10 +43,6 @@ body{
 	margin-top: 20px;
 }
 
-.input-box label{
-	color: #333;
-}
-
 /* input box */
 .form .input-box input{ 
 	position: relative;
@@ -60,4 +60,43 @@ body{
 .form .column{
 	display: flex;
 	column-gap: 15px;
+}
+
+/*  Radio buttons */
+.form .gender-box{
+	margin-top: 20px;
+	color: #707070;
+}
+
+.gender-box h3{
+	color: #333;
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: 8px;
+}
+
+.form :where(.gender-option, .gender){
+	display: flex;
+	align-items: center;
+	column-gap: 80px;
+	padding: 5px;
+}
+
+.form .gender{
+	column-gap: 5px;
+	cursor: pointer;
+}
+
+.form :where(.gender input, .gender label){
+	cursor: pointer;
+}
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 500px){
+	.form .column{
+		flex-wrap: wrap;
+	}
 }
